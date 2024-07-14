@@ -1,7 +1,7 @@
 
 ## How to use the provided ETAClassifier:
 
-1. Set the OPENAI_API_KEY enviroment variable
+1. Set the OPENAI_API_KEY enviroment variable, if you wish to run the tests.py
 
 2. Create an ETAClassifier: 
 

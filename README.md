@@ -1,5 +1,5 @@
 
-## How to use this:
+## How to use the provided ETAClassifier:
 
 1. Set the OPENAI_API_KEY enviroment variable
 

@@ -147,7 +147,6 @@ class YourCustomClassifier(QueryClassifier):
         )
 
     async def classify(self, query: str) -> QueryClassifier.QueryClassificationResult:
-        # This method can remain the same as in EtaClassifier
         # ...
 ```
 

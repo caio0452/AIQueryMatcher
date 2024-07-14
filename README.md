@@ -129,9 +129,9 @@ class YourCustomClassifier(QueryClassifier):
         self._check_steps = check_steps
 
     @classmethod
-    async def with_openai(cls, *, api_key: str, model: str = "gpt-4", api_base: str | None = None) -> "YourCustomClassifier":
+    async def with_openai(cls, *, api_key: str, model: str = "gpt-4", api_base: str | None = None, timeout: int=15) -> "YourCustomClassifier":
         REFERENCE_PHRASE = "Your reference phrase here"
-        client = AsyncOpenAI(api_key=api_key, base_url=api_base)
+        client = AsyncOpenAI(api_key=api_key, base_url=api_base, timeout=timeout)
         emb_resp = await client.embeddings.create(
             model="text-embedding-3-large", 
             input=REFERENCE_PHRASE
